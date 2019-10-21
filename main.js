@@ -16,6 +16,7 @@ const randomFunc = {
   symbol: getRandomSymbole
 }
 
+// Generate Element Listen
 generateEl.addEventListener('click', () => {
   const length = +lengthEl.value;
   const hasLower = lowercaseEl.checked;
@@ -23,7 +24,7 @@ generateEl.addEventListener('click', () => {
   const hasNumber = numbersEl.checked;
   const hasSymbol = symbolsEl.checked;
 
-  generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
+  resultEl.innerHTML = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 })
 
 // Generator functions - http://www.net-comber/charset.html
