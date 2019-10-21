@@ -23,7 +23,7 @@ generateEl.addEventListener('click', () => {
   const hasNumber = numbersEl.checked;
   const hasSymbol = symbolsEl.checked;
 
-  console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+  generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 })
 
 // Generator functions - http://www.net-comber/charset.html
