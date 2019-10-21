@@ -9,13 +9,22 @@ const generateEl = document.getElementById('generate');
 const clipboardEl = document.getElementById('clipboard');
 
 
-
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
   number: getRandomNumber,
   symbol: getRandomSymbole
 }
+
+generateEl.addEventListener('click', () => {
+  const length = +lengthEl.value;
+  const hasLower = lowercaseEl.checked;
+  const hasUpper = uppercaseEl.checked;
+  const hasNumber = numbersEl.checked;
+  const hasSymbol = symbolsEl.checked;
+
+  console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+})
 
 // Generator functions - http://www.net-comber/charset.html
 
