@@ -1,3 +1,10 @@
+const randomFunc = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  symbol: getRandomSymbole
+}
+
 // Generator functions - http://www.net-comber/charset.html
 
 function getRandomLower() {
